@@ -1,0 +1,7 @@
+contexts:
+  norm:
+    status: ready
+    provider:
+      type: local_repository
+      root: "/ABSOLUTE/PATH/TO/norm-product-context-v3-mvp"
+      manifest: "product-system/context-manifest.yaml"

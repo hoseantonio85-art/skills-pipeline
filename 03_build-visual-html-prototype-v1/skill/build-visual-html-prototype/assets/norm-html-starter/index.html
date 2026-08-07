@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NORM — прототип</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="prototype-tools" aria-label="Управление демонстрацией">Прототип · сценарий по умолчанию</div>
+  <div class="app-shell">
+    <aside class="app-nav">
+      <div class="brand">NORM</div>
+      <nav aria-label="Основная навигация">
+        <a href="#">Обзор</a>
+        <a href="#" class="active">Риски</a>
+        <a href="#">Меры</a>
+        <a href="#">Источники</a>
+      </nav>
+    </aside>
+    <main class="app-surface">
+      <div class="page">
+        <header class="page-header">
+          <div><h1>Название раздела <span class="count">24</span></h1><p>Короткое объяснение текущей ситуации</p></div>
+          <button class="button button-secondary">AI-действие</button>
+        </header>
+        <section class="quick-filters" aria-label="Быстрые фильтры">
+          <button class="chip active">Все <b>24</b></button><button class="chip">Требуют внимания <b>7</b></button><button class="chip">Критичные <b>3</b></button>
+        </section>
+        <section class="registry" aria-label="Список объектов">
+          <button class="entity-card">
+            <div class="entity-top"><span class="status status-danger">Высокий риск</span><span class="meta">Обновлено сегодня</span></div>
+            <h2>Срыв срока поставки критичного оборудования</h2>
+            <p>Задержка может повлиять на запуск производственной линии в III квартале.</p>
+            <div class="facts"><span><small>Потенциальные потери</small><strong>18,4 млн ₽</strong></span><span><small>Владелец</small><strong>Закупки</strong></span><span><small>Стратегия</small><strong>Снижение</strong></span></div>
+          </button>
+        </section>
+      </div>
+      <div class="action-dock"><button class="button button-primary">Основное действие</button><button class="assistant" aria-label="Открыть AI-ассистента">AI</button></div>
+    </main>
+  </div>
+  <script src="prototype.js"></script>
+</body>
+</html>

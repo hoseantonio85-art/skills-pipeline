@@ -1,0 +1,51 @@
+schema_version: 1
+context_id: norm
+
+sources:
+  product_knowledge:
+    status: ready
+    type: local_repository
+    root: "."
+    manifest: "product-system/context-manifest.yaml"
+
+  current_frontend:
+    status: not_connected
+    type: local_repository
+    root: ""
+    description: "Add relevant NORM frontend repository or repositories."
+
+  current_backend:
+    status: not_connected
+    type: local_repository
+    root: ""
+    description: "Add relevant backend or contract repositories if needed."
+
+  release_registry:
+    status: not_connected
+    type: file_or_mcp
+    location: ""
+
+  product_analytics:
+    status: not_connected
+    type: file_or_mcp
+    location: ""
+
+  current_interface:
+    status: task_specific
+    type: attachments_or_links
+    description: >
+      Screenshots, recordings or current flow descriptions are supplied for a
+      concrete task and recorded in the increment sources.
+
+  confluence:
+    status: planned
+    type: confluence_mcp
+    server: confluence
+    space_key: NORM
+    root_page: TBD
+
+rules:
+  - "Do not infer production behavior from product knowledge alone."
+  - "Load only repositories relevant to the selected service and task."
+  - "Do not use implementation sources for UI mapping during UX stage."
+  - "Record task-specific screenshots and code revision in increment sources."

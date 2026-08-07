@@ -1,0 +1,286 @@
+schema_version: 1
+package: '@sber-orm/ui-kit'
+version: 0.283.0
+package_sha256: 2d1ff1ee1afd2ef820babc593d54976f97a042623eade29eb071c99bda0a589e
+generated_from:
+- product-system/04_ui/ui-kit/ui_base.md
+- sources/ui-kit/ui-kit-0.283.0.tgz:package/dist/index.d.ts
+loading_rule: Read this index first, then only the selected component section and
+  exact type declarations.
+components:
+- name: Button
+  category: Базовые компоненты
+  docs_heading_line: 63
+  verified_exports:
+  - Button
+  api_verification: package_dist_index_d_ts
+- name: Input
+  category: Базовые компоненты
+  docs_heading_line: 120
+  verified_exports:
+  - Input
+  api_verification: package_dist_index_d_ts
+- name: Select
+  category: Базовые компоненты
+  docs_heading_line: 180
+  verified_exports:
+  - Select
+  api_verification: package_dist_index_d_ts
+- name: Checkbox
+  category: Базовые компоненты
+  docs_heading_line: 253
+  verified_exports:
+  - Checkbox
+  api_verification: package_dist_index_d_ts
+- name: Text
+  category: Базовые компоненты
+  docs_heading_line: 294
+  verified_exports:
+  - Text
+  api_verification: package_dist_index_d_ts
+- name: Title
+  category: Базовые компоненты
+  docs_heading_line: 330
+  verified_exports:
+  - Title
+  api_verification: package_dist_index_d_ts
+- name: Link
+  category: Базовые компоненты
+  docs_heading_line: 359
+  verified_exports:
+  - Link
+  api_verification: package_dist_index_d_ts
+- name: Icon
+  category: Базовые компоненты
+  docs_heading_line: 384
+  verified_exports:
+  - Icon
+  api_verification: package_dist_index_d_ts
+- name: Grid (Row/Col)
+  category: Базовые компоненты
+  docs_heading_line: 416
+  verified_exports:
+  - Row
+  - Col
+  api_verification: package_dist_index_d_ts
+- name: Tooltip
+  category: Базовые компоненты
+  docs_heading_line: 471
+  verified_exports:
+  - Tooltip
+  api_verification: package_dist_index_d_ts
+- name: Badge
+  category: Базовые компоненты
+  docs_heading_line: 507
+  verified_exports:
+  - Badge
+  api_verification: package_dist_index_d_ts
+- name: Loader
+  category: Базовые компоненты
+  docs_heading_line: 533
+  verified_exports:
+  - Loader
+  api_verification: package_dist_index_d_ts
+- name: Modal
+  category: Интерактивные компоненты
+  docs_heading_line: 561
+  verified_exports:
+  - Modal
+  api_verification: package_dist_index_d_ts
+- name: Switch
+  category: Интерактивные компоненты
+  docs_heading_line: 611
+  verified_exports:
+  - Switch
+  api_verification: package_dist_index_d_ts
+- name: Radio
+  category: Интерактивные компоненты
+  docs_heading_line: 649
+  verified_exports:
+  - Radio
+  api_verification: package_dist_index_d_ts
+- name: RadioChips
+  category: Интерактивные компоненты
+  docs_heading_line: 690
+  verified_exports:
+  - RadioChips
+  api_verification: package_dist_index_d_ts
+- name: CheckboxChips
+  category: Интерактивные компоненты
+  docs_heading_line: 750
+  verified_exports:
+  - CheckboxChips
+  api_verification: package_dist_index_d_ts
+- name: Chips
+  category: Интерактивные компоненты
+  docs_heading_line: 809
+  verified_exports:
+  - Chips
+  api_verification: package_dist_index_d_ts
+- name: Textarea
+  category: Формы и поля ввода
+  docs_heading_line: 863
+  verified_exports:
+  - Textarea
+  api_verification: package_dist_index_d_ts
+- name: InputNumber
+  category: Формы и поля ввода
+  docs_heading_line: 918
+  verified_exports:
+  - InputNumber
+  api_verification: package_dist_index_d_ts
+- name: MoneyInput
+  category: Формы и поля ввода
+  docs_heading_line: 978
+  verified_exports:
+  - MoneyInput
+  api_verification: package_dist_index_d_ts
+- name: InputMask
+  category: Формы и поля ввода
+  docs_heading_line: 1025
+  verified_exports:
+  - InputMask
+  api_verification: package_dist_index_d_ts
+- name: ComboBox
+  category: Формы и поля ввода
+  docs_heading_line: 1080
+  verified_exports:
+  - ComboBox
+  api_verification: package_dist_index_d_ts
+- name: FieldSelect
+  category: Формы и поля ввода
+  docs_heading_line: 1121
+  verified_exports:
+  - FieldSelect
+  api_verification: package_dist_index_d_ts
+- name: FieldSearch
+  category: Формы и поля ввода
+  docs_heading_line: 1164
+  verified_exports:
+  - FieldSearch
+  api_verification: package_dist_index_d_ts
+- name: DatePicker
+  category: Даты и время
+  docs_heading_line: 1208
+  verified_exports:
+  - DatePicker
+  api_verification: package_dist_index_d_ts
+- name: DateRangePicker
+  category: Даты и время
+  docs_heading_line: 1274
+  verified_exports:
+  - DateRangePicker
+  api_verification: package_dist_index_d_ts
+- name: MoneyRangeInput
+  category: Даты и время
+  docs_heading_line: 1329
+  verified_exports:
+  - MoneyRangeInput
+  api_verification: package_dist_index_d_ts
+- name: BarChart
+  category: Отображение данных
+  docs_heading_line: 1378
+  verified_exports:
+  - BarChart
+  api_verification: package_dist_index_d_ts
+- name: LinearProgress
+  category: Отображение данных
+  docs_heading_line: 1413
+  verified_exports:
+  - LinearProgress
+  api_verification: package_dist_index_d_ts
+- name: InfoDisplay
+  category: Отображение данных
+  docs_heading_line: 1457
+  verified_exports:
+  - InfoDisplay
+  api_verification: package_dist_index_d_ts
+- name: Level
+  category: Отображение данных
+  docs_heading_line: 1498
+  verified_exports:
+  - Level
+  api_verification: package_dist_index_d_ts
+- name: Shimmer
+  category: Отображение данных
+  docs_heading_line: 1546
+  verified_exports:
+  - Shimmer
+  api_verification: package_dist_index_d_ts
+- name: Alert
+  category: Уведомления
+  docs_heading_line: 1587
+  verified_exports:
+  - Alert
+  api_verification: package_dist_index_d_ts
+- name: Notice
+  category: Уведомления
+  docs_heading_line: 1657
+  verified_exports:
+  - Notice
+  api_verification: package_dist_index_d_ts
+- name: Notification
+  category: Уведомления
+  docs_heading_line: 1697
+  verified_exports:
+  - Notification
+  api_verification: package_dist_index_d_ts
+- name: Accordion
+  category: Навигация и списки
+  docs_heading_line: 1755
+  verified_exports: []
+  api_verification: docs_only_or_type
+- name: Popper/Popup
+  category: Навигация и списки
+  docs_heading_line: 1811
+  verified_exports:
+  - PopperInstance
+  api_verification: package_dist_index_d_ts
+- name: Popover
+  category: Навигация и списки
+  docs_heading_line: 1836
+  verified_exports:
+  - Popover
+  api_verification: package_dist_index_d_ts
+- name: ScrollBar
+  category: Навигация и списки
+  docs_heading_line: 1885
+  verified_exports:
+  - ScrollBar
+  api_verification: package_dist_index_d_ts
+- name: MarkdownViewer
+  category: Работа с контентом
+  docs_heading_line: 1919
+  verified_exports:
+  - MarkdownViewer
+  api_verification: package_dist_index_d_ts
+- name: Droplist
+  category: Вспомогательные компоненты
+  docs_heading_line: 1954
+  verified_exports:
+  - Droplist
+  api_verification: package_dist_index_d_ts
+- name: FileUploader
+  category: Вспомогательные компоненты
+  docs_heading_line: 1983
+  verified_exports: []
+  api_verification: docs_only_or_type
+- name: TComponentSizes
+  category: Общие типы
+  docs_heading_line: 2002
+  verified_exports:
+  - TComponentSizes
+  api_verification: package_dist_index_d_ts
+- name: EComponentColors
+  category: Общие типы
+  docs_heading_line: 2009
+  verified_exports:
+  - EComponentColors
+  api_verification: package_dist_index_d_ts
+- name: EIconName
+  category: Общие типы
+  docs_heading_line: 2020
+  verified_exports:
+  - EIconName
+  api_verification: package_dist_index_d_ts
+export_count: 374

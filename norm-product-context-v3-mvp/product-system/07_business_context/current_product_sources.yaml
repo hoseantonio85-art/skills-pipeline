@@ -1,0 +1,43 @@
+schema_version: 2
+context_id: norm
+sources:
+  product_knowledge:
+    status: ready
+    type: local_repository
+    root: .
+    manifest: product-system/context-manifest.yaml
+  ui_kit:
+    status: ready
+    type: package_and_docs
+    registry: product-system/04_ui/ui_sources.yaml
+  current_frontend:
+    status: not_connected
+    type: external_local_repository
+    root: ''
+    description: Add only relevant product repository providers when existing-product
+      analysis is introduced.
+  current_backend:
+    status: not_connected
+    type: external_local_repository
+    root: ''
+  release_registry:
+    status: not_connected
+    type: file_or_mcp
+    location: ''
+  product_analytics:
+    status: not_connected
+    type: file_or_mcp
+    location: ''
+  current_interface:
+    status: task_specific
+    type: code_or_task_attachments
+    description: GigaCode MVP relies on code and task descriptions; screenshots are
+      not canonical context.
+  product_master_specs:
+    status: to_be_added
+    type: documents
+    location: ''
+rules:
+- Do not infer production behavior from product knowledge alone.
+- Do not scan all product repositories by default.
+- Record source revision in each task increment.

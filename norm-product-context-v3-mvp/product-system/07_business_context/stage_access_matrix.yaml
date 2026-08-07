@@ -1,0 +1,24 @@
+schema_version: 2
+context_id: norm
+stages:
+  01_product_task:
+    skill: formulate-product-task
+    loading_profile: for_product_task
+    output: 01_product_brief.md
+  02_ux_solution:
+    skill: design-ux-solution
+    loading_profile: for_ux_solution
+    required_input: '01_product_brief.md: READY_FOR_UX'
+    output: 02_ux_solution.md
+  03_visual_html_prototype:
+    skill: build-visual-html-prototype
+    loading_profile: for_visual_html_prototype
+    required_input: '02_ux_solution.md: READY_FOR_PROTOTYPE'
+    supported_mode: product_like_increment
+    output: 03_visual_prototype.md + runnable HTML prototype
+  04_ui_kit_implementation:
+    skill: build-ui-prototype
+    loading_profile: for_ui_prototype
+    required_input: approved visual prototype
+    output: UI Kit implementation
+rule: Later stages read earlier outputs but do not automatically reload all earlier context.

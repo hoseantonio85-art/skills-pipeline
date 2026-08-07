@@ -1,0 +1,163 @@
+schema_version: 2
+
+context_id: norm
+label: NORM
+context_type: product_knowledge
+status: partial
+language: ru
+
+assembled_at: "2026-07-15"
+updated_at: "2026-07-16"
+assembled_by: "AI-assisted context build"
+last_business_reviewed: null
+last_ux_reviewed: null
+
+source_repository:
+  repository: "hoseantonio85-art/AI-PDLC-Design"
+  branch: "main"
+  revision: "2f8ca83b973d8b90a855afc31fc82baabc1cc9f7"
+  revision_status: "repository-head-at-context-build-time"
+
+validation:
+  product_owner: "needs-review"
+  business_analyst: "not-reviewed"
+  system_analyst: "not-reviewed"
+  ux_owner: "needs-review"
+  production_behavior: "not-verified"
+  release_catalog: "not-connected"
+  current_interface: "not-connected"
+
+authority:
+  policy: "product-system/07_business_context/source_authority.md"
+  conflict_rule: "Do not resolve conflicting authoritative sources silently."
+
+documents:
+  context_status:
+    - "product-system/07_business_context/context_status.md"
+
+  source_authority:
+    - "product-system/07_business_context/source_authority.md"
+
+  context_loading_guide:
+    - "product-system/07_business_context/context_loading_guide.md"
+
+  product_foundation:
+    - "product-system/01_product_foundation/product_philosophy.md"
+    - "product-system/01_product_foundation/mission.md"
+    - "product-system/01_product_foundation/service_goal.md"
+
+  service_map:
+    - "product-system/02_services/services_map.md"
+
+  service_registry:
+    - "product-system/07_business_context/service_registry.yaml"
+
+  service_documents:
+    - "product-system/02_services/risk_analysis.md"
+    - "product-system/02_services/incidents.md"
+    - "product-system/02_services/measures.md"
+    - "product-system/02_services/sources.md"
+    - "product-system/02_services/monitoring.md"
+    - "product-system/02_services/ai_assistant.md"
+
+  roles:
+    - "product-system/07_business_context/roles.md"
+
+  glossary:
+    - "product-system/07_business_context/glossary.md"
+
+  business_rules:
+    - "product-system/07_business_context/common_business_rules.md"
+
+  known_capabilities:
+    - "product-system/07_business_context/known_capabilities.md"
+
+  released_features:
+    - "product-system/07_business_context/released_features.md"
+
+  constraints:
+    - "product-system/07_business_context/known_constraints.md"
+
+  decisions:
+    - "product-system/07_business_context/product_decisions.md"
+
+  ux_principles:
+    - "product-system/03_ux/ux_principles.md"
+
+  ux_patterns:
+    - "product-system/03_ux/ux_patterns.md"
+
+  current_product_state:
+    - "product-system/07_business_context/current_product_state.md"
+
+  current_product_sources:
+    - "product-system/07_business_context/current_product_sources.yaml"
+
+  supporting_methodology:
+    - "product-system/00_start_here/product_to_ui_master_prompt.md"
+
+  supporting_examples:
+    - "product-system/05_examples/good_task_example.md"
+    - "product-system/05_examples/bad_task_example.md"
+
+loading:
+  always:
+    - "product-system/07_business_context/context_status.md"
+    - "product-system/07_business_context/source_authority.md"
+    - "product-system/01_product_foundation/mission.md"
+    - "product-system/01_product_foundation/service_goal.md"
+    - "product-system/07_business_context/known_constraints.md"
+
+  for_product_task:
+    - "product-system/01_product_foundation/product_philosophy.md"
+    - "product-system/02_services/services_map.md"
+    - "product-system/07_business_context/roles.md"
+    - "product-system/07_business_context/glossary.md"
+    - "product-system/07_business_context/common_business_rules.md"
+    - "product-system/07_business_context/known_capabilities.md"
+
+  for_ux_solution:
+    - "product-system/01_product_foundation/product_philosophy.md"
+    - "product-system/02_services/services_map.md"
+    - "product-system/07_business_context/roles.md"
+    - "product-system/07_business_context/glossary.md"
+    - "product-system/07_business_context/common_business_rules.md"
+    - "product-system/07_business_context/known_capabilities.md"
+    - "product-system/07_business_context/released_features.md"
+    - "product-system/07_business_context/known_constraints.md"
+    - "product-system/07_business_context/current_product_state.md"
+    - "product-system/07_business_context/current_product_sources.yaml"
+    - "product-system/03_ux/ux_principles.md"
+    - "product-system/03_ux/ux_patterns.md"
+
+  on_demand:
+    rule: "Load only service and implementation sources relevant to the task."
+    service_registry: "product-system/07_business_context/service_registry.yaml"
+    current_product_sources: "product-system/07_business_context/current_product_sources.yaml"
+
+profile_exclusions:
+  formulate_product_task:
+    - "product-system/03_ux/**"
+    - "product-system/04_ui/**"
+    - "product-system/06_lovable/**"
+    - "**/storybook/**"
+    - "**/src/**"
+
+  design_ux_solution:
+    - "product-system/04_ui/**"
+    - "product-system/06_lovable/**"
+    - "**/storybook/**"
+    - "**/design-tokens/**"
+
+  ui_prototype:
+    - "TBD"
+
+limitations:
+  - "The repository describes the intended product model, not verified production behavior."
+  - "No authoritative release registry is connected."
+  - "No complete permissions matrix is documented."
+  - "No formal domain model or full business-rule catalog is connected."
+  - "No product analytics catalog is connected."
+  - "Current frontend/backend repositories are not connected."
+  - "Current interface screenshots are task-specific and not part of the canonical context."
+  - "Objects Assessment and Limit Campaign must not be treated as confirmed services."

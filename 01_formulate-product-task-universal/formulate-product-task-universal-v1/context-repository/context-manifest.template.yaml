@@ -1,0 +1,33 @@
+version: 1
+
+context_id: replace-me
+label: Replace me
+status: needs-review
+owner: TBD
+last_reviewed: null
+
+# Логические группы источников. Skill ориентируется на назначение документа,
+# а не на жёстко заданную структуру конкретного репозитория.
+documents:
+  product_foundation: []
+  service_map: null
+  roles: []
+  glossary: []
+  business_rules: []
+  released_features: []
+  constraints: []
+  decisions: []
+
+discovery:
+  service_documents:
+    - "path/or/glob/to/services/*.md"
+  supporting_examples: []
+
+excluded_by_default:
+  - "ux/**"
+  - "ui/**"
+  - "storybook/**"
+  - "frontend/**"
+
+notes:
+  - "Не выдавать needs-review или draft документы за подтверждённые факты."

@@ -1,0 +1,54 @@
+version: 1
+
+context_id: norm
+label: NORM
+status: needs-review
+owner: Product team
+last_reviewed: null
+
+documents:
+  product_foundation:
+    - "product-system/01_product_foundation/product_philosophy.md"
+    - "product-system/01_product_foundation/mission.md"
+    - "product-system/01_product_foundation/service_goal.md"
+
+  service_map: "product-system/02_services/services_map.md"
+
+  # Следующие группы могут отсутствовать в текущем клоне.
+  # Отсутствие нужно честно зафиксировать, а не компенсировать догадками.
+  roles:
+    - "product-system/07_business_context/roles.md"
+
+  glossary:
+    - "product-system/07_business_context/glossary.md"
+
+  business_rules:
+    - "product-system/07_business_context/common_business_rules.md"
+
+  released_features:
+    - "product-system/07_business_context/released_features.md"
+
+  constraints:
+    - "product-system/07_business_context/known_constraints.md"
+
+  decisions: []
+
+discovery:
+  service_documents:
+    - "product-system/02_services/*.md"
+
+  supporting_examples:
+    - "product-system/05_examples/good_task_example.md"
+    - "product-system/00_start_here/product_to_ui_master_prompt.md"
+
+excluded_by_default:
+  - "product-system/03_ux/**"
+  - "product-system/04_ui/**"
+  - "product-system/06_lovable/**"
+  - "**/storybook/**"
+  - "**/src/**"
+
+notes:
+  - "Manifest является стартовой картой источников, а не доказательством их актуальности."
+  - "Перед использованием контекста проверить наличие файлов и их метаданные."
+  - "UX/UI и Storybook не являются основным контекстом этапа продуктовой постановки."

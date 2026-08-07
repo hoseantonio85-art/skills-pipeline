@@ -1,0 +1,19 @@
+{
+  "skill": "design-ux-solution",
+  "version": 1,
+  "files": 14,
+  "references_declared": [
+    "references/context-resolution.md",
+    "references/current-product-analysis.md",
+    "references/input-contract.md",
+    "references/quality-checklist.md",
+    "references/source-policy.md",
+    "references/ux-solution-template.md",
+    "references/ux-ui-boundary.md"
+  ],
+  "missing_references": [],
+  "yaml": {
+    "context-update/norm/product-system/context-manifest.yaml": "passed",
+    "context-update/norm/product-system/07_business_context/current_product_sources.yaml": "passed"
+  }
+}

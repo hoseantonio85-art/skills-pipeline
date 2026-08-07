@@ -1,0 +1,39 @@
+version: 1
+
+# Это пользовательский реестр доступных продуктовых контекстов.
+# Формат является соглашением skill formulate-product-task, а не встроенным форматом GigaCode.
+
+selection:
+  ask_when_unspecified: true
+  allow_without_context: true
+  no_context_id: none
+
+contexts:
+  norm:
+    label: NORM
+    description: Продуктовый контекст NORM.
+    status: needs_path
+    provider:
+      type: local_repository
+      # Заменить на абсолютный путь к локальному клону AI-PDLC-Design.
+      root: "/REPLACE/WITH/ABSOLUTE/PATH/TO/AI-PDLC-Design"
+      manifest: "product-system/context-manifest.yaml"
+    future_provider:
+      type: confluence_mcp
+      server: confluence
+      space_key: NORM
+      root_page: TBD
+
+  orm:
+    label: ORM
+    description: Резервный продуктовый контекст ORM на будущее.
+    status: planned
+    provider:
+      type: local_repository
+      root: ""
+      manifest: "product-system/context-manifest.yaml"
+    future_provider:
+      type: confluence_mcp
+      server: confluence
+      space_key: ORM
+      root_page: TBD

@@ -1,0 +1,38 @@
+schema_version: 1
+context_id: norm
+sources:
+- id: legacy_product_knowledge
+  type: repository_snapshot
+  status: normalized
+  origin: hoseantonio85-art/AI-PDLC-Design
+  usage: Product facts retained in normalized product-system documents; repository
+    is not the maintained context target.
+- id: ui_kit_0_283_0
+  type: package
+  status: available
+  path: sources/ui-kit/ui-kit-0.283.0.tgz
+  sha256: 2d1ff1ee1afd2ef820babc593d54976f97a042623eade29eb071c99bda0a589e
+- id: common_components_snapshot
+  type: archive
+  status: evidence_only
+  path: sources/common-components/sberorm-front-library-core.zip
+  sha256: 9219db85290d2c436934762e7d96caba4b880a90415f3a703b0270b5705cd9b5
+- id: frontend_standards
+  type: document
+  status: normalized_and_retained
+  path: sources/frontend-rules/frontend-standards-subagent.md
+  sha256: f77b48cc43452f287194d20da047ba155b0e690c5514b94a27ca66b4afb05dbc
+- id: component_structure_rules
+  type: document
+  status: normalized_and_retained
+  path: sources/frontend-rules/component-structure-data-barrels-ui-kit.md
+  sha256: 092dc6745c1cde9f3f5602cbcd99f0a4e01cf1fa806c54940c12cfdfc88eaea3
+future_sources:
+- id: product_master_specs
+  status: to_be_added_by_owner
+- id: current_product_frontends
+  status: external_provider_not_connected
+- id: release_registry
+  status: not_connected
+- id: permissions_matrix
+  status: not_connected

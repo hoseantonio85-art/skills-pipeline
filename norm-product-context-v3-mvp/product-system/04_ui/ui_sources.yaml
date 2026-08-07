@@ -1,0 +1,42 @@
+schema_version: 1
+context_id: norm
+sources:
+  ui_kit_component_index:
+    status: ready
+    path: product-system/04_ui/ui-kit/component-index.yaml
+    loading: auto_for_ui_prototype
+  ui_kit_docs:
+    status: ready
+    path: product-system/04_ui/ui-kit/ui_base.md
+    loading: on_demand_fragments
+  ui_kit_package:
+    status: ready
+    path: sources/ui-kit/ui-kit-0.283.0.tgz
+    package: '@sber-orm/ui-kit'
+    version: 0.283.0
+    sha256: 2d1ff1ee1afd2ef820babc593d54976f97a042623eade29eb071c99bda0a589e
+    loading: exact_types_only
+  common_components_package:
+    status: evidence_only
+    path: sources/common-components/sberorm-front-library-core.zip
+    sha256: 9219db85290d2c436934762e7d96caba4b880a90415f3a703b0270b5705cd9b5
+    loading: prohibited_by_default
+  frontend_rules_full:
+    status: evidence_only
+    path: sources/frontend-rules/frontend-standards-subagent.md
+    sha256: f77b48cc43452f287194d20da047ba155b0e690c5514b94a27ca66b4afb05dbc
+    loading: prohibited_by_default
+  component_structure_full:
+    status: evidence_only
+    path: sources/frontend-rules/component-structure-data-barrels-ui-kit.md
+    sha256: 092dc6745c1cde9f3f5602cbcd99f0a4e01cf1fa806c54940c12cfdfc88eaea3
+    loading: prohibited_by_default
+  composite_patterns:
+    status: not_available
+    registry: product-system/04_ui/patterns/pattern-registry.yaml
+    loading: on_demand
+rules:
+- Read component-index first.
+- Read only selected component documentation and exact type declarations.
+- Do not unpack or scan entire packages into the model context.
+- Absence of composite patterns does not block standalone greenfield prototype.

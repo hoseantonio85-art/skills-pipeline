@@ -1,0 +1,171 @@
+schema_version: 1
+context_id: norm
+status: empty_mvp
+patterns:
+  - id: entity-list-page
+    title: Страница списка сущностей
+    status: draft
+    maturity: reference-backed
+    implementation: guidance
+    category: page
+    path: entity-list-page.md
+    version: 0.1.0
+    evidence:
+      repositories: 3
+      implementations: 3
+    delegated_patterns:
+      - entity-card
+      - filter-toolbar
+      - entity-details-surface
+      - page-actions
+      - auxiliary-drawer
+    review:
+      design: needs-review
+      frontend: needs-review
+  - id: filter-bar-and-advanced-filter-drawer
+    title: Панель фильтров с расширенным фильтром
+    status: draft
+    maturity: reference-backed
+    category: filtering
+    path: filter-bar-and-advanced-filter-drawer.md
+    version: 0.1.0
+    implementation:
+      type: guidance
+      reusable_component: false
+    normative_scope:
+      - hierarchy between quick filters, search and advanced filtering
+      - applied and draft filter state interaction
+      - filter actions and active-state communication
+      - integration contract with a results surface
+    delegated_patterns:
+      - quick-filter-control
+      - search-field
+      - filter-field
+      - drawer-surface
+      - results-surface
+      - query-state-persistence
+    evidence:
+      repositories: 2
+      implementations: 2
+    review:
+      design: needs-review
+      frontend: needs-review
+  - id: large-entity-modal
+    title: Большая модалка сущности
+    status: draft
+    maturity: reference-backed
+    category: surface
+    path: large-entity-modal.md
+    version: 0.1.0
+    implementation:
+      type: guidance
+      reusable_component: false
+    normative_scope:
+      - entity-modal anatomy
+      - hierarchy between identity, content, meta and actions
+      - modal-level state and continuity contract
+      - integration between modal regions
+    delegated_patterns:
+      - entity-summary
+      - entity-content-section
+      - entity-meta
+      - workflow-footer
+      - related-entity-navigation
+      - auxiliary-drawer
+      - confirmation-modal
+      - modal-surface
+    evidence:
+      repositories: 3
+      implementations: 3
+    review:
+      design: needs-review
+      frontend: needs-review
+  - id: entity-card
+    title: Анатомия карточки сущности
+    status: draft
+    maturity: reference-backed
+    category: content
+    path: entity-card.md
+    version: 0.1.0
+    implementation:
+      type: guidance
+      reusable_component: false
+    normative_scope:
+      - entity-card semantic anatomy
+      - information hierarchy inside one card
+      - relationship between identity, signal, metrics and attention reason
+      - card-level open intent and interaction boundary
+    delegated_patterns:
+      - status-indicator
+      - metric-display
+      - entity-details-surface
+      - item-actions
+      - selectable-list-item
+      - list-virtualization
+    evidence:
+      repositories: 3
+      implementations: 3
+    review:
+      design: needs-review
+      frontend: needs-review
+  - id: drawer-inside-modal
+    title: Drawer внутри модалки
+    status: draft
+    maturity: reference-backed
+    category: surface
+    path: drawer-inside-modal.md
+    version: 0.1.0
+    implementation:
+      type: guidance
+      reusable_component: false
+    normative_scope:
+      - auxiliary-drawer intent inside a parent modal
+      - continuity between parent modal and nested drawer
+      - nested-surface lifecycle and stack relationship
+      - integration contract for drawer content and actions
+    delegated_patterns:
+      - modal-surface
+      - drawer-surface
+      - auxiliary-content
+      - workflow-footer
+      - confirmation-modal
+      - surface-stack
+      - related-entity-preview
+    evidence:
+      repositories: 3
+      implementations: 3
+    review:
+      design: needs-review
+      frontend: needs-review
+  - id: modal-form
+    title: Форма в модалке
+    status: draft
+    maturity: reference-backed
+    category: form
+    path: modal-form.md
+    version: 0.1.0
+    implementation:
+      type: guidance
+      reusable_component: false
+    normative_scope:
+      - modal-form anatomy and information hierarchy
+      - draft, validation, submit and cancel lifecycle
+      - modal-level form state model
+      - integration between form body, feedback and footer actions
+    delegated_patterns:
+      - modal-surface
+      - form-section
+      - form-field
+      - validation-summary
+      - workflow-footer
+      - confirmation-modal
+      - staged-form
+      - attachment-field
+      - auxiliary-drawer
+    evidence:
+      repositories: 2
+      implementations: 2
+    review:
+      design: needs-review
+      frontend: needs-review
+loading_rule: Load only a pattern selected for the current surface.

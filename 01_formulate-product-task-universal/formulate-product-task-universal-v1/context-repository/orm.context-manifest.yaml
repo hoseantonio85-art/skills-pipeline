@@ -1,0 +1,32 @@
+version: 1
+
+context_id: orm
+label: ORM
+status: planned
+owner: TBD
+last_reviewed: null
+
+documents:
+  product_foundation: []
+  service_map: null
+  roles: []
+  glossary: []
+  business_rules: []
+  released_features: []
+  constraints: []
+  decisions: []
+
+discovery:
+  service_documents: []
+  supporting_examples: []
+
+excluded_by_default:
+  - "ux/**"
+  - "ui/**"
+  - "storybook/**"
+  - "frontend/**"
+
+notes:
+  - "Профиль ORM создан как заготовка."
+  - "Контекст не считается подключённым, пока не задан provider и не существует доступный manifest."
+  - "Skill обязан сообщить, что ORM пока недоступен, и предложить другой контекст или работу без контекста."

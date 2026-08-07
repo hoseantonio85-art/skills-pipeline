@@ -1,0 +1,26 @@
+schema_version: 2
+context_id: norm
+skills:
+  - name: formulate-product-task
+    stage: '01'
+    context_profile: for_product_task
+    expected_output: 01_product_brief.md
+  - name: design-ux-solution
+    stage: '02'
+    context_profile: for_ux_solution
+    required_input: '01_product_brief.md: READY_FOR_UX'
+    expected_output: 02_ux_solution.md
+  - name: build-visual-html-prototype
+    stage: '03'
+    context_profile: for_visual_html_prototype
+    required_input: '02_ux_solution.md: READY_FOR_PROTOTYPE'
+    expected_output: 03_visual_prototype.md + runnable HTML prototype
+  - name: build-ui-prototype
+    stage: '04'
+    context_profile: for_ui_prototype
+    required_input: approved visual prototype
+    expected_output: UI Kit implementation
+context_contract:
+  manifest: product-system/context-manifest.yaml
+  selector: .gigacode/product-context.yaml
+  registry: ~/.gigacode/product-contexts.yaml

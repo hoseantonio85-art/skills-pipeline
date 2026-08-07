@@ -1,0 +1,87 @@
+schema_version: 4
+package_version: 4.0.0-visual-mvp
+context_id: norm
+label: NORM
+context_type: product_knowledge_ux_and_visual_system
+status: ready_for_visual_html_mvp
+language: ru
+skill_profiles:
+  formulate-product-task: for_product_task
+  design-ux-solution: for_ux_solution
+  build-visual-html-prototype: for_visual_html_prototype
+  build-ui-prototype: for_ui_prototype
+documents:
+  foundation:
+    - product-system/01_product_foundation/mission.md
+    - product-system/01_product_foundation/product_philosophy.md
+    - product-system/01_product_foundation/service_goal.md
+  services:
+    - product-system/02_services/services_map.md
+  ux:
+    - product-system/03_ux/ux_principles.md
+    - product-system/03_ux/ux_patterns.md
+  visual:
+    - product-system/04_ui/visual/visual-language.md
+    - product-system/04_ui/visual/layout-and-density.md
+    - product-system/04_ui/visual/pattern-selection.md
+    - product-system/04_ui/visual/modal-and-drawer.md
+  ui_kit:
+    - product-system/04_ui/ui-kit/component-index.yaml
+    - product-system/04_ui/ui-kit/ui_base.md
+  business_context:
+    - product-system/07_business_context/roles.md
+    - product-system/07_business_context/common_business_rules.md
+    - product-system/07_business_context/known_capabilities.md
+    - product-system/07_business_context/known_constraints.md
+loading:
+  always:
+    - product-system/01_product_foundation/mission.md
+    - product-system/07_business_context/known_constraints.md
+  for_product_task:
+    - product-system/01_product_foundation/product_philosophy.md
+    - product-system/01_product_foundation/service_goal.md
+    - product-system/02_services/services_map.md
+    - product-system/07_business_context/roles.md
+    - product-system/07_business_context/common_business_rules.md
+    - product-system/07_business_context/known_capabilities.md
+  for_ux_solution:
+    - product-system/01_product_foundation/product_philosophy.md
+    - product-system/02_services/services_map.md
+    - product-system/03_ux/ux_principles.md
+    - product-system/03_ux/ux_patterns.md
+    - product-system/07_business_context/roles.md
+    - product-system/07_business_context/common_business_rules.md
+    - product-system/07_business_context/known_capabilities.md
+  for_visual_html_prototype:
+    - product-system/03_ux/ux_principles.md
+    - product-system/03_ux/ux_patterns.md
+    - product-system/04_ui/ui_context_status.md
+    - product-system/04_ui/visual/visual-language.md
+    - product-system/04_ui/visual/layout-and-density.md
+    - product-system/04_ui/visual/pattern-selection.md
+  for_ui_prototype:
+    - product-system/04_ui/ui_context_status.md
+    - product-system/04_ui/prototype_ui_rules.md
+    - product-system/04_ui/frontend_prototype_rules.md
+    - product-system/04_ui/ui-kit/component-index.yaml
+  on_demand:
+    service_documents: product-system/02_services/*.md
+    modal_and_drawer: product-system/04_ui/visual/modal-and-drawer.md
+    ui_kit_docs: product-system/04_ui/ui-kit/ui_base.md
+profile_exclusions:
+  formulate-product-task:
+    - product-system/03_ux/**
+    - product-system/04_ui/**
+  design-ux-solution:
+    - product-system/04_ui/ui-kit/**
+    - sources/ui-kit/**
+  build-visual-html-prototype:
+    - product-system/04_ui/ui-kit/**
+    - sources/ui-kit/**
+    - sources/frontend-rules/**
+  build-ui-prototype:
+    - unrelated service documents
+limitations:
+  - Visual rules are an MVP synthesis from two product repositories and authored pattern documents.
+  - Screenshots are not available to GigaCode as runtime context.
+  - HTML prototypes are not production UI Kit implementations.

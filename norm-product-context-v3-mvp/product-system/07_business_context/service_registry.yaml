@@ -1,0 +1,109 @@
+schema_version: 1
+
+status_note: >
+  Services are confirmed in the repository product model.
+  Production availability is not verified.
+
+services:
+  risk_analysis:
+    label: "Анализ рисков"
+    status: "confirmed_in_product_model"
+    production_status: "unknown"
+    primary_document: "product-system/02_services/risk_analysis.md"
+    canonical_map: "product-system/02_services/services_map.md"
+    roles:
+      - risk_manager
+      - executive
+      - methodologist
+    receives_from:
+      - incidents
+      - sources
+      - monitoring
+    continues_to:
+      - measures
+      - ai_assistant
+
+  incidents:
+    label: "Инциденты"
+    status: "confirmed_in_product_model"
+    production_status: "unknown"
+    primary_document: "product-system/02_services/incidents.md"
+    canonical_map: "product-system/02_services/services_map.md"
+    roles:
+      - risk_manager
+      - incident_initiator
+      - executive
+    continues_to:
+      - risk_analysis
+      - measures
+      - ai_assistant
+
+  measures:
+    label: "Управление мерами"
+    status: "confirmed_in_product_model"
+    production_status: "unknown"
+    primary_document: "product-system/02_services/measures.md"
+    canonical_map: "product-system/02_services/services_map.md"
+    roles:
+      - risk_manager
+      - measure_executor
+      - executive
+    receives_from:
+      - risk_analysis
+      - incidents
+      - ai_assistant
+    returns_to:
+      - risk_analysis
+
+  sources:
+    label: "Источники и документы"
+    status: "confirmed_in_product_model"
+    production_status: "unknown"
+    primary_document: "product-system/02_services/sources.md"
+    canonical_map: "product-system/02_services/services_map.md"
+    roles:
+      - risk_manager
+      - methodologist
+      - knowledge_owner
+    continues_to:
+      - risk_analysis
+      - ai_assistant
+
+  monitoring:
+    label: "Мониторинг новостей и законов"
+    status: "confirmed_in_product_model"
+    production_status: "unknown"
+    primary_document: "product-system/02_services/monitoring.md"
+    canonical_map: "product-system/02_services/services_map.md"
+    roles:
+      - risk_manager
+      - methodologist
+      - executive
+    continues_to:
+      - risk_analysis
+      - ai_assistant
+      - sources
+
+  ai_assistant:
+    label: "AI-ассистент"
+    status: "confirmed_in_product_model"
+    production_status: "unknown"
+    primary_document: "product-system/02_services/ai_assistant.md"
+    canonical_map: "product-system/02_services/services_map.md"
+    roles:
+      - risk_manager
+      - executive
+      - methodologist
+      - measure_executor
+    uses:
+      - risk_analysis
+      - incidents
+      - measures
+      - sources
+      - monitoring
+
+not_confirmed_as_services:
+  - id: assessment_objects
+    label: "Объекты оценки"
+  - id: limit_campaign
+    label: "Лимитная кампания"
