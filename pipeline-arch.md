@@ -1,62 +1,38 @@
-BUSINESS INTENT
-────────────────────────
-
-00 Intent
-Что хотим изменить?
-Почему сейчас?
-Какой outcome?
-Как поймём успех?
-
-
-PRODUCT / UX DISCOVERY
-────────────────────────
-
-01 Product Brief
-Проблема, пользователь,
-правила, scope, context
+Intent
+«зачем и что должно стать лучше»
 
         ↓
 
-02 UX Solution
-Как пользователь решает задачу?
+Product Brief
+«что входит в изменение»
 
         ↓
 
-03 Fast Prototype
-Материализуем гипотезу
+UX Solution
+«как пользователь с этим работает»
 
         ↓
 
-Human review
+Prototype
+«как это выглядит и ощущается»
 
         ↓
 
-03.5 UX Decision Sync
-Фиксируем final UX truth
-
-
-SPECIFICATION / ANALYSIS
-────────────────────────
-
-04 SDD / Delta Specification
-Что система обязана обеспечивать?
-
-- scenarios
-- GWT
-- errors
-- constraints
-- business rules
-- system requirements
-- technical design по мере анализа
+UX Sync
+«что мы в итоге действительно решили»
 
         ↓
 
-Validation / PR
+SDD
+«точное, проверяемое поведение системы»
 
+        ↓
+──────────── граница product / engineering ────────────
+        ↓
 
-ENGINEERING
-────────────────────────
+Engineering plan
+«как это реализовать в этом репозитории»
 
-Frontend
-Backend
-Tests
+        ↓
+
+Frontend / backend
